@@ -1,0 +1,8 @@
+---
+applications:
+- name: PropertiesByRest
+  memory: 256M
+  host: PropertiesByRest
+  domain: mybluemix.net
+  instances: 1
+

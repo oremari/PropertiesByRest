@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+
+
+
+
+<project basedir="." default="build" name="PropertiesByRest">
+    <property environment="env"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.8"/>
+    <property name="source" value="1.8"/>
+    <path id="Web App Libraries.libraryclasspath"/>
+    <path id="EAR Libraries.libraryclasspath"/>
+    <path id="WebSphere Application Server Liberty [WebSphere Application Server Liberty 16.0.0.4].libraryclasspath">
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/ibm/com.ibm.websphere.appserver.api.basics_1.2.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/ibm/com.ibm.websphere.appserver.api.collectiveController_1.5.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/ibm/com.ibm.websphere.appserver.api.config_1.2.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/ibm/com.ibm.websphere.appserver.api.connectionpool_1.0.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/ibm/com.ibm.websphere.appserver.api.distributedMap_2.0.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/ibm/com.ibm.websphere.appserver.api.ejbcontainer_1.0.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/ibm/com.ibm.websphere.appserver.api.endpoint_1.0.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/ibm/com.ibm.websphere.appserver.api.hpel_2.0.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/ibm/com.ibm.websphere.appserver.api.jaxrs20_1.0.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/ibm/com.ibm.websphere.appserver.api.json_1.0.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/ibm/com.ibm.websphere.appserver.api.kernel.service_1.0.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/ibm/com.ibm.websphere.appserver.api.messaging_1.0.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/ibm/com.ibm.websphere.appserver.api.monitor_1.1.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/ibm/com.ibm.websphere.appserver.api.restConnector_1.2.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/ibm/com.ibm.websphere.appserver.api.security_1.2.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/ibm/com.ibm.websphere.appserver.api.servlet_1.1.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/ibm/com.ibm.websphere.appserver.api.sessionstats_1.0.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/ibm/com.ibm.websphere.appserver.api.ssl_1.1.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/ibm/com.ibm.websphere.appserver.api.transaction_1.1.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/ibm/com.ibm.websphere.appserver.api.webCache_1.1.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/ibm/com.ibm.websphere.appserver.api.webcontainer.security.app_1.1.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/ibm/com.ibm.websphere.appserver.api.wsoc_1.0.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/third-party/com.ibm.websphere.appserver.thirdparty.cdi_1.0.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/third-party/com.ibm.websphere.appserver.thirdparty.eclipselink_1.0.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/third-party/com.ibm.websphere.appserver.thirdparty.swagger.annotations_1.0.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/spec/com.ibm.websphere.javaee.annotation.1.2_1.0.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/spec/com.ibm.websphere.javaee.cdi.1.2_1.2.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/spec/com.ibm.websphere.javaee.connector.1.7_1.0.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/spec/com.ibm.websphere.javaee.ejb.3.2_1.0.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/spec/com.ibm.websphere.javaee.el.3.0_1.0.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/spec/com.ibm.websphere.javaee.interceptor.1.2_1.0.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/spec/com.ibm.websphere.javaee.jaxrs.2.0_1.0.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/spec/com.ibm.websphere.javaee.jms.2.0_1.0.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/spec/com.ibm.websphere.javaee.jsf.2.2_1.0.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/spec/com.ibm.websphere.javaee.jsonp.1.0_1.0.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/spec/com.ibm.websphere.javaee.jsp.2.3_1.0.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/spec/com.ibm.websphere.javaee.jsp.tld.2.2_1.2.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/spec/com.ibm.websphere.javaee.jstl.1.2_1.0.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/spec/com.ibm.websphere.javaee.persistence.2.1_1.0.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/spec/com.ibm.websphere.javaee.servlet.3.1_1.0.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/spec/com.ibm.websphere.javaee.transaction.1.2_1.0.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/spec/com.ibm.websphere.javaee.validation.1.1_1.0.15.jar"/>
+        <pathelement location="../../../Downloads/wlp-16.0.0.4/wlp/dev/api/spec/com.ibm.websphere.javaee.websocket.1.1_1.0.15.jar"/>
+    </path>
+    <path id="PropertiesByRest.classpath">
+        <pathelement location="WebContent/WEB-INF/classes"/>
+        <path refid="Web App Libraries.libraryclasspath"/>
+        <path refid="EAR Libraries.libraryclasspath"/>
+        <path refid="WebSphere Application Server Liberty [WebSphere Application Server Liberty 16.0.0.4].libraryclasspath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="WebContent/WEB-INF/classes"/>
+        <copy includeemptydirs="false" todir="WebContent/WEB-INF/classes">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="WebContent/WEB-INF/classes">
+            <fileset dir=".apt_generated">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="WebContent/WEB-INF/classes"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="WebContent/WEB-INF/classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <src path=".apt_generated"/>
+            <classpath refid="PropertiesByRest.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+	<target name="war" description="Bundles the application as a WAR file" depends="clean, build">
+	    <mkdir dir="WebContent/WEB-INF/classes"/>
+	     
+	    <copy includeemptydirs="false" todir="WebContent/WEB-INF/classes">
+	            <fileset dir="build/classes">
+	            <include name="**/*.class"/>
+	            </fileset>
+	    </copy>
+	     
+	    <war destfile="PropertiesByRest.war"
+	        basedir="WebContent"
+	        needxmlfile="false">
+	    </war>
+	</target>
+
+</project>
+
+
