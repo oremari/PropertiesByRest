@@ -66,6 +66,12 @@
         <path refid="EAR Libraries.libraryclasspath"/>
         <path refid="WebSphere Application Server Liberty [WebSphere Application Server Liberty 16.0.0.4].libraryclasspath"/>
     </path>
+  
+    <war destfile="PropertiesByRest.war"
+                basedir="WebContent"
+                needxmlfile="false">
+            </war>
+  
     <target name="init">
         <mkdir dir="WebContent/WEB-INF/classes"/>
         <copy includeemptydirs="false" todir="WebContent/WEB-INF/classes">
@@ -102,10 +108,7 @@
 	            </fileset>
 	    </copy>
 	     
-	    <war destfile="PropertiesByRest.war"
-	        basedir="WebContent"
-	        needxmlfile="false">
-	    </war>
+	   
 	</target>
 
 </project>
