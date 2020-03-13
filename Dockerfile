@@ -1,5 +1,4 @@
 FROM websphere-liberty
-
 ENTRYPOINT ["/opt/ibm/wlp/bin/server", "run", "defaultServer"]
 RUN installUtility install --acceptLicense defaultServer
 ADD server.xml /opt/ibm/wlp/usr/servers/defaultServer/
